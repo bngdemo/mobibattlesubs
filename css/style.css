@@ -1,0 +1,76 @@
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    color          : #ffffff;
+    background     : #e1d3db;
+    /* fallback for old browsers */
+    background     : -webkit-linear-gradient(to bottom, #e1d3db, #301E69);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background     : linear-gradient(to bottom, #e1d3db, #301E69);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.small,
+small {
+    font-size: .8em;
+}
+
+.form-control,
+.form-select,
+.form-control:focus,
+.form-select:focus {
+    background-color: transparent;
+    border          : 2px solid #ffffff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, .25);
+}
+
+.form-control,
+.form-control:focus,
+.form-select,
+.form-control::placeholder {
+    color: #ffffff;
+}
+
+.form-control {
+    padding-left: 7rem;
+}
+
+.mobile-placeholder,
+.network-placeholder,
+.pin-placeholder {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    height         : 100%;
+    position       : absolute;
+    border-right   : 2px solid #ffffff;
+}
+
+.mobile-placeholder {
+    width: 6.5rem;
+}
+
+.form-select {
+    padding-left    : 4.5rem;
+    background-image: url(../assets/icons/down_arrow_icon.png);
+    background-size : 28px 32px;
+}
+
+.form-control-pin {
+    padding-left    : 4.5rem;
+}
+
+.network-placeholder,
+.pin-placeholder {
+    width: 4rem;
+}
